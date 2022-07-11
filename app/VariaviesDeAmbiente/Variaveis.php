@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Common;
+namespace App\VariaviesDeAmbiente;
 
-class Environment
+class Variaveis
 {
     public static function load($dir)
     {

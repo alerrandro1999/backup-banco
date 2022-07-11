@@ -1,0 +1,8 @@
+{
+    "name": "backup/banco",
+    "autoload": {
+        "psr-4": {
+            "App\\" : "app/"
+        }
+    }
+}

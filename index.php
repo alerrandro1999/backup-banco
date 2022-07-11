@@ -2,8 +2,10 @@
 
 require __DIR__ . '/vendor/autoload.php';
 
-use App\Common\Environment;
+use App\Backup\BackupAutomatico;
+use App\VariaviesDeAmbiente\Variaveis;
 
-Environment::load(__DIR__);
+Variaveis::load(__DIR__);
 
-// shell_exec('C:\xampp\mysql\bin\mysqldump -u root api-binance > backup.sql');
+$automatic = new BackupAutomatico;
+$automatic->backupAutomaticoDoBancoDeDados();
